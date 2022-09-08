@@ -1,0 +1,67 @@
+.projectCard{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 4px 14px -3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px 4px 14px -3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 4px 14px -3px rgba(0,0,0,0.4);
+    .imageContainer {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .projectCardDetails {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        background-color: white;
+        padding: 10px;
+        .projectCardHeading {
+            display: flex;
+            justify-content: space-between;
+            .left {
+                display: flex;
+                flex-direction: column;
+                h1{                    
+                    margin: 0;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+                .technologiesConatainer{
+                    .technology{
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 10px;
+                        &.html {
+                            color: #4DBECD;
+                        }
+                        &.css {
+                            color: #1E3996;
+                        }
+                        &.js {
+                            color: #CD6387;
+                        }
+                        &.api {
+                            color: #AAD73B;
+                        }
+                    }
+                }
+            }
+            .right {
+                p {
+                    margin: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+        .projectDescription {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 10px;
+        }
+    }
+}

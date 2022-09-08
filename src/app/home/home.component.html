@@ -1,0 +1,10 @@
+<div class="home-content-container">
+    <h1 class="heading">Frontend Mentor Tasks</h1>
+    <div class="all-project-cards">
+        <div *ngFor="let project of projectCards" class="project-card">
+            <app-project-card
+                [projectCard]="project"
+            ></app-project-card>
+        </div>
+    </div>
+</div>

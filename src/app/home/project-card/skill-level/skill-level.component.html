@@ -1,0 +1,18 @@
+<div class="skillLevelComponentContainer"
+[ngClass]="{
+    'newbie': skillLevelNumber === '1',
+    'junior': skillLevelNumber === '2',
+    'intermediate': skillLevelNumber === '3',
+    'advanced': skillLevelNumber === '4',
+    'guru': skillLevelNumber === '5'
+}">
+    <div class="skillLevelContainer" 
+    >        
+        <div class="left">
+            <h1 class="skillLevelNumber">{{skillLevelNumber}}</h1>
+        </div>
+        <div class="right">
+            <h1 class="skillLevel">{{skillLevel}}</h1>
+        </div>
+    </div>
+</div>

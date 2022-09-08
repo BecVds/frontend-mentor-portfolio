@@ -1,0 +1,32 @@
+<div class="projectCard">
+    <div class="imageContainer">
+        <img src= {{projectCard.image}} alt="">
+    </div>
+    <div class="projectCardDetails">
+        <div class="projectCardHeading">
+            <div class="left">
+                <h1>{{ projectCard.name }}</h1>
+                <div class="technologiesConatainer">
+                    <span 
+                        *ngFor="let technology of projectCard.technologies"
+                        class="technology"
+                        [ngClass]="{
+                            'html': technology === 'html',
+                            'css': technology === 'css',
+                            'js': technology === 'js',
+                            'api': technology === 'api'
+                        }"
+                    >
+                        {{ technology | uppercase }}
+                    </span>
+                </div>
+            </div>
+            <div class="right">
+                <app-skill-level 
+                    [skillLevel]="projectCard.skillLevel"
+                ></app-skill-level>
+            </div>
+        </div>
+        <p class="projectDescription"> {{ projectCard.description }}</p>
+    </div>
+</div>

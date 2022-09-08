@@ -1,0 +1,66 @@
+.skillLevelComponentContainer{    
+    .skillLevelContainer{
+        display: flex;
+        border: 1px solid;
+        border-radius: 3px;
+        .left { 
+            padding: 2px 5px;
+            h1{    
+                color: white;
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+        .right {
+            padding: 2px 5px;
+            h1 {                      
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+    }
+    &.newbie {
+        color: #6ABECD;
+        .skillLevelContainer {
+            .left {
+                background-color: #6ABECD; 
+            }
+        }
+    }
+    &.junior {
+        color: #AAD742;
+        .skillLevelContainer {
+            .left {
+                background-color: #AAD742; 
+            }
+        }
+    }
+    &.intermediate {
+        color: #F1B604;
+        .skillLevelContainer {
+            .left {
+                background-color: #F1B604; 
+            }
+        }
+    }
+    &.advanced {
+        color: #F48925;
+        .skillLevelContainer {
+            .left {
+                background-color: #F48925; 
+            }
+        }
+    }
+    &.guru {
+        color: #ED2C49;
+        .skillLevelContainer {
+            .left {
+                background-color: #ED2C49; 
+            }
+        }
+    }
+}
