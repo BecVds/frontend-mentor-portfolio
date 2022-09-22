@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FrontendMentorTasksModule } from './frontend-mentor-tasks/frontend-mentor-tasks.module';
+import { FRONTEND_MENTOR, HOME } from './home/config/routes-config';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home',
+    redirectTo: HOME,
   },
   {
-    path: 'home',
+    path: HOME,
     component: HomeComponent,
   },
   {
-    path: 'frontend-mentor-tasks',
+    path: FRONTEND_MENTOR,
     loadChildren: () => FrontendMentorTasksModule,
   },
 ];

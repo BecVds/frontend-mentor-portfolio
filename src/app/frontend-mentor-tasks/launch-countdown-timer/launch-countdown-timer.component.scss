@@ -1,0 +1,59 @@
+.launch-countdown-timer-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    .background {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(#1E1E28, #241D2C);
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        align-items: flex-end;
+        .image-container {
+            position: absolute;
+            z-index: 1;
+            margin: auto;
+        }        
+        & .background-stars {
+            width: 100%;
+            height: 100%;
+            background-image: url("../../../assets/launch-countdown-timer-assets/bg-stars.svg");                
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        & .background-hills {
+            width: 100%;
+            height: 30%;
+            background-image: url("../../../assets/launch-countdown-timer-assets/pattern-hills.svg");                
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .main-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            h1 {
+                margin: 0;
+                color: white;
+            }
+        }
+        .social-media-contact-container {
+            display: flex;
+            gap: 30px;
+        }
+    }
+}

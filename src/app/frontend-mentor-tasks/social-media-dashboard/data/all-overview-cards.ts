@@ -1,0 +1,68 @@
+import { OverviewCard } from '../models/overview-card';
+
+export const ALL_OVERVIEW_CARDS: OverviewCard[] = [
+  {
+    heading: 'Page Views',
+    logo: '../../assets/social-media-dashboard-assets/icon-facebook.svg',
+    amount: '87',
+    direction: '../../assets/social-media-dashboard-assets/icon-up.svg',
+    directionId: 'up',
+    percentage: '3%',
+  },
+  {
+    heading: 'Likes',
+    logo: '../../assets/social-media-dashboard-assets/icon-facebook.svg',
+    amount: '52',
+    direction: '../../assets/social-media-dashboard-assets/icon-down.svg',
+    directionId: 'down',
+    percentage: '2%',
+  },
+  {
+    heading: 'Likes',
+    logo: '../../assets/social-media-dashboard-assets/icon-instagram.svg',
+    amount: '5462',
+    direction: '../../assets/social-media-dashboard-assets/icon-up.svg',
+    directionId: 'up',
+    percentage: '2257%',
+  },
+  {
+    heading: 'Profile Views',
+    logo: '../../assets/social-media-dashboard-assets/icon-instagram.svg',
+    amount: '52k',
+    direction: '../../assets/social-media-dashboard-assets/icon-up.svg',
+    directionId: 'up',
+    percentage: '1375%',
+  },
+  {
+    heading: 'Retweets',
+    logo: '../../assets/social-media-dashboard-assets/icon-twitter.svg',
+    amount: '117',
+    direction: '../../assets/social-media-dashboard-assets/icon-up.svg',
+    directionId: 'up',
+    percentage: '303%',
+  },
+  {
+    heading: 'Likes',
+    logo: '../../assets/social-media-dashboard-assets/icon-twitter.svg',
+    amount: '507',
+    direction: '../../assets/social-media-dashboard-assets/icon-up.svg',
+    directionId: 'up',
+    percentage: '553%',
+  },
+  {
+    heading: 'Likes',
+    logo: '../../assets/social-media-dashboard-assets/icon-youtube.svg',
+    amount: '107',
+    direction: '../../assets/social-media-dashboard-assets/icon-down.svg',
+    directionId: 'down',
+    percentage: '19%',
+  },
+  {
+    heading: 'Total Views',
+    logo: '../../assets/social-media-dashboard-assets/icon-youtube.svg',
+    amount: '1407',
+    direction: '../../assets/social-media-dashboard-assets/icon-down.svg',
+    directionId: 'down',
+    percentage: '12%',
+  },
+];

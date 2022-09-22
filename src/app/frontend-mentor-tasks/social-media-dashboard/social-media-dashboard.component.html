@@ -1,0 +1,36 @@
+<div class="social-media-dashboard-container" [ngClass]="activeThemeClass">
+    <div class="header">
+        <div class="left">
+            <h1>Social Media Dashboard</h1>
+            <h3>Total Followers: 23,004</h3>
+        </div>
+        <hr>
+        <div class="right">
+            <h3>Dark Mode</h3>
+            <div class="theme-toggle-container" [ngClass]="activeThemeClass" (click)="toggleSelectedClickHandler()">
+                <div class="theme-toggle" ></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content-container">
+        <div class="main-display-card-container"> 
+            <div *ngFor="let mainDisplayCard of mainDisplayCards" class="main-display-cards" >
+                <app-main-display-card
+                    [mainDisplayCard]="mainDisplayCard"
+                ></app-main-display-card>
+            </div>
+        </div>
+        <div class="bottom">
+            <h2>Overview - Today</h2>
+            <div class="overview-container">
+                <div class="overview-containers">                
+                    <div *ngFor="let overviewCard of overviewCards" class="overViewCards">
+                        <app-overview-card
+                            [overviewCard]="overviewCard"
+                        ></app-overview-card>
+                    </div>                
+                </div> 
+            </div>           
+        </div>
+    </div>
+</div>

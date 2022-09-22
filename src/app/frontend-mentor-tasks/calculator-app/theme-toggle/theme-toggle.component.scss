@@ -1,0 +1,70 @@
+@import '../calculator-styles.scss';
+
+$switchContainerHeight: 25px;
+$switchContainerWidth: 60px;
+$switchContainerPadding: 4px;
+
+.theme-toggle-container {
+    .theme-container-main-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        .left {
+            h3 {
+                font-size: 8px;
+                color: var(--primary-text-color-two);
+                margin: 0;
+                margin-bottom: 4px;
+                font-family: 'League Spartan', sans-serif;
+            }
+        }
+        .right {
+            .numbers-container{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 3px;
+                h3 {
+                    font-size: 8px;
+                    color: var(--primary-text-color-two);
+                    margin: 0;
+                    font-family: 'League Spartan', sans-serif;
+                }
+            }
+            .toggle-selected-container {
+                width: $switchContainerWidth;
+                height: $switchContainerHeight;
+                border-radius: 18px;
+                background-color: var(--toggle-background-color);
+                position: relative;
+                cursor: pointer;
+                .selected-indicator {
+                    position: absolute;
+                    height: calc($switchContainerHeight - $switchContainerPadding * 2);
+                    top: $switchContainerPadding;
+                    aspect-ratio: 1 / 1;
+                    border-radius: 100%;
+                    background-color: var(--equals-key-backround-color);
+                    transition: all 0.3s ease;
+                }
+                &.theme-1 {
+                    .selected-indicator {
+                        left: calc(0% + $switchContainerPadding);
+                        transform: translateX(0);
+                    }   
+                }
+                &.theme-2 {
+                    .selected-indicator {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }  
+                }
+                &.theme-3 {
+                    .selected-indicator {
+                        left: calc(100% - $switchContainerPadding);
+                        transform: translateX(-100%);
+                    }  
+                }
+            }
+        }
+    }
+}

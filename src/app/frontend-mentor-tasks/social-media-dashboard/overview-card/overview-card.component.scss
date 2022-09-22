@@ -1,0 +1,50 @@
+@import '../social-media-dasboard-styles.scss';
+
+.overview-container {
+    background-color: var(--card-background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            color: var(--secondary-text-color);
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        h1 {
+            color: var(--primary-text-color);
+            margin: 0;
+            font-size: 26px;
+        }
+        .percentage-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            .img-container-direction-icon {
+                display: flex;
+                align-items: center;
+            }
+            h3 {
+                margin: 0;
+                font-size: 12px;
+                &.up {
+                    color: var(--Lime-Green-color);
+                }
+                &.down {
+                    color: var(--Bright-Red-color);
+                }                
+            }
+        }
+    }
+}

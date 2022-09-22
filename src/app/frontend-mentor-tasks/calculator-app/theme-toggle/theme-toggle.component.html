@@ -1,0 +1,17 @@
+<div class="theme-toggle-container">
+    <div class="theme-container-main-container">
+        <div class="left">
+            <h3>THEME</h3>
+        </div>      
+        <div class="right">
+            <div class="numbers-container">
+                <h3>1</h3>
+                <h3>2</h3>
+                <h3>3</h3>
+            </div>      
+            <div class="toggle-selected-container" [ngClass]="activeThemeClass" (click)="toggleSelectedClickHandler()">
+                <div class="selected-indicator"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -12,13 +12,10 @@ import { SkillLevelComponent } from './home/project-card/skill-level/skill-level
     AppComponent,
     HomeComponent,
     ProjectCardComponent,
-    SkillLevelComponent
+    SkillLevelComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

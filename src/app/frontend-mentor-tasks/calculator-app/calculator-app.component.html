@@ -1,1 +1,38 @@
-<p>calculator-app works!</p>
+<div class="calculator-app-container" [ngClass]="getClassValue">
+    <div class="main-calc-container">
+        <div class="top-header">
+            <div class="left">
+                <h1>calc</h1>
+            </div>
+            <div class="right">
+                <app-theme-toggle (themeChanged)="setCurrentTheme($event)"></app-theme-toggle>
+            </div>
+        </div>
+        <div class="display-calc-container">
+            <h2>{{value}}</h2>
+        </div>
+        <div class="calc-pad-container">
+            <button class="calc-button" (click)="keyInputHandler('7')">7</button>
+            <button class="calc-button" (click)="keyInputHandler('8')">8</button>
+            <button class="calc-button" (click)="keyInputHandler('9')">9</button>
+            <button class="calc-button secondary-key" (click)="deleteButton()">DEL</button>
+            <button class="calc-button" (click)="keyInputHandler('4')">4</button>
+            <button class="calc-button" (click)="keyInputHandler('5')">5</button>
+            <button class="calc-button" (click)="keyInputHandler('6')">6</button>
+            <button class="calc-button" (click)="keyInputHandler('+')">+</button>
+            <button class="calc-button" (click)="keyInputHandler('1')">1</button>
+            <button class="calc-button" (click)="keyInputHandler('2')">2</button>
+            <button class="calc-button" (click)="keyInputHandler('3')">3</button>
+            <button class="calc-button" (click)="keyInputHandler('-')">-</button>
+            <button class="calc-button" (click)="keyInputHandler('.')">.</button>
+            <button class="calc-button" (click)="keyInputHandler('0')">0</button>
+            <button class="calc-button" (click)="keyInputHandler('/')">/</button>
+            <button class="calc-button" (click)="keyInputHandler('*')">X</button>
+            <button class="calc-button secondary-key" id="reset" (click)="resetButton()">RESET</button>
+            <button class="calc-button equals-key" id="equals" (click)="calculateButton()">=</button>
+        </div>
+    </div> 
+    <div class="home-floating-button">
+        <app-home-floating-button></app-home-floating-button>
+    </div>   
+</div>

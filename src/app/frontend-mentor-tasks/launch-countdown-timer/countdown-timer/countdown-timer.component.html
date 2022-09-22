@@ -1,0 +1,26 @@
+<div class="countdown-timer-container">
+    <div class="time-container">
+        <app-number-card [intervalTime]="timeInterval.days"></app-number-card>
+        <div class="time-amount">
+            <h1>DAYS</h1>
+        </div>
+    </div>
+    <div class="time-container">
+        <app-number-card [intervalTime]="timeInterval.hours"></app-number-card>
+        <div class="time-amount">
+            <h1>HOURS</h1>
+        </div>
+    </div>
+    <div class="time-container">
+        <app-number-card [intervalTime]="timeInterval.minutes"></app-number-card>
+        <div class="time-amount">
+            <h1>MINUTES</h1>
+        </div>
+    </div>
+    <div class="time-container">
+        <app-number-card [intervalTime]="timeInterval.seconds"></app-number-card>
+        <div class="time-amount">
+            <h1>SECONDS</h1>
+        </div>
+    </div>
+</div>

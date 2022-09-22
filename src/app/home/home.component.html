@@ -1,7 +1,7 @@
 <div class="home-content-container">
     <h1 class="heading">Frontend Mentor Tasks</h1>
     <div class="all-project-cards">
-        <div *ngFor="let project of projectCards" class="project-card">
+        <div *ngFor="let project of projectCards" class="project-card" (click)="onCardClick(project.route)">
             <app-project-card
                 [projectCard]="project"
             ></app-project-card>

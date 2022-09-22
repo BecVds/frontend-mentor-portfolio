@@ -1,0 +1,18 @@
+<div class="overview-container">
+    <div class="top">
+        <h2>{{overviewCard.heading}}</h2>
+        <div class="img-container-logo">
+            <img [src]="overviewCard.logo" alt="logo">
+        </div>
+    </div>
+    <div class="bottom">
+        <h1>{{overviewCard.amount}}</h1>
+        <div class="percentage-container">
+            <div class="img-container-direction-icon">
+                <img [src]='overviewCard.direction' alt="direction-icon">
+            </div>
+            <h3 [ngClass]="overviewCard.directionId"          
+            >{{overviewCard.percentage}}</h3>
+        </div> 
+    </div>
+</div>

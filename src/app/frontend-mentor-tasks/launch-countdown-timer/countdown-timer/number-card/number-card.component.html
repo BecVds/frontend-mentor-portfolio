@@ -1,0 +1,18 @@
+<div class="number-card-container">
+    <div class="bottom">
+        <h1>{{editedIntervalTime}}</h1>
+    </div>
+    <div class="top">
+        <div class="top-body" [ngClass]="{'enabled': topBodyToggled, 'hidden': hiddenToggled}">
+            <div class="front">
+                <h1>{{editedDelayedIntervalTime}}</h1>
+            </div>
+            <div class="back">
+                <h1>{{editedIntervalTime}}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-half">
+        <h1>{{delayedTimeDisplayed}}</h1>
+    </div>
+</div>

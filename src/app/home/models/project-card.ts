@@ -7,4 +7,5 @@ export interface ProjectCard {
   technologies: Technologies[];
   skillLevel: SkillLevel;
   image: string;
+  route: string;
 }
