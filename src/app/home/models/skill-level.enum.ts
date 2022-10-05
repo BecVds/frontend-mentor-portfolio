@@ -6,9 +6,9 @@ export enum SkillLevel {
   Guru = 'guru',
 }
 export enum SkillLevelNumber {
-  Newbie = '1',
-  Junior = '2',
-  Intermediate = '3',
-  Advanced = '4',
-  Guru = '5',
+  Newbie = 1,
+  Junior = 2,
+  Intermediate = 3,
+  Advanced = 4,
+  Guru = 5,
 }

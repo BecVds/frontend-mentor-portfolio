@@ -1,0 +1,94 @@
+.rock-paper-scissors-conatainer {
+    background-image: linear-gradient(#1E3353, #181D3D);
+    min-height: 100vh;
+    position: relative;
+    .rules-modal {
+        position: absolute;
+        z-index: 100;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 70px 0px;
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: #CDCED2;
+        }
+    }
+    .main-container {
+        padding: 30px;
+        padding-bottom: 60px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top {
+            .top-banner-conatiner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid #61718B;
+                border-radius: 5px;
+                padding: 10px;
+                h2 {
+                    margin: 0;
+                    font-size: 16px;
+                    color: white;
+                    margin: 10px;
+                }
+                .score-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    min-width: 80px;
+                    h3 {
+                        font-size: 12px;
+                        margin: 0;
+                    }
+                    .score-amount {
+                        margin: 0;
+                    }
+                }
+            }
+            .middle {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 200px;
+            }
+        }
+        .bottom {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .button-container {
+                border: 1px solid white;
+                border-radius: 5px;
+                width: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    margin: 0;
+                    color: white;
+                    padding: 10px;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }    
+}

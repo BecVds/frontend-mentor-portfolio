@@ -1,0 +1,28 @@
+<div class="selection-buttons-container">
+    <div class="image-container">
+        <img *ngIf="GameModeChosen" src="../../../../assets/rock-paper-scissors-assets/bg-triangle.svg" alt="background-triangle">
+        <img *ngIf="!GameModeChosen" src="../../../../assets/rock-paper-scissors-assets/bg-pentagon.svg" alt="background-pentagon">
+    </div>
+    <div class="buttons mode1" *ngIf="GameModeChosen">
+        <div class="top">
+            <app-button [option]="paperOption" (click)="playerChoice(paperOption!)"></app-button>
+            <app-button [option]="scissorsOption" (click)="playerChoice(scissorsOption!)"></app-button>
+        </div>
+        <div class="bottom">
+            <app-button [option]="rockOption" (click)="playerChoice(rockOption!)"></app-button>
+        </div>
+    </div>
+    <div class="buttons mode2" *ngIf="!GameModeChosen">
+        <div class="top">
+            <app-button [option]="scissorsOption" (click)="playerChoice(paperOption!)"></app-button>
+        </div>
+        <div class="middle">
+            <app-button [option]="spockOption" (click)="playerChoice(spockOption!)"></app-button>            
+            <app-button [option]="paperOption" (click)="playerChoice(paperOption!)"></app-button>
+        </div>
+        <div class="bottom">
+            <app-button [option]="lizardOption" (click)="playerChoice(lizardOption!)"></app-button>            
+            <app-button [option]="rockOption" (click)="playerChoice(rockOption!)"></app-button>
+        </div>
+    </div>
+</div>

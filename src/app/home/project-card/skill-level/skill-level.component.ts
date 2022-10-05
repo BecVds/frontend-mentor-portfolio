@@ -28,15 +28,15 @@ export class SkillLevelComponent implements OnInit {
 
   skillLevelNumberController(skillLevel: string) {
     if (skillLevel === SkillLevel.Advanced) {
-      this.skillLevelNumber = SkillLevelNumber.Advanced;
+      this.skillLevelNumber = SkillLevelNumber.Advanced + '';
     } else if (skillLevel === SkillLevel.Guru) {
-      this.skillLevelNumber = SkillLevelNumber.Guru;
+      this.skillLevelNumber = SkillLevelNumber.Guru + '';
     } else if (skillLevel === SkillLevel.Intermediate) {
-      this.skillLevelNumber = SkillLevelNumber.Intermediate;
+      this.skillLevelNumber = SkillLevelNumber.Intermediate + '';
     } else if (skillLevel === SkillLevel.Junior) {
-      this.skillLevelNumber = SkillLevelNumber.Junior;
+      this.skillLevelNumber = SkillLevelNumber.Junior + '';
     } else if (skillLevel === SkillLevel.Newbie) {
-      this.skillLevelNumber = SkillLevelNumber.Newbie;
+      this.skillLevelNumber = SkillLevelNumber.Newbie + '';
     }
   }
 }

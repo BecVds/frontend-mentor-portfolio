@@ -23,5 +23,12 @@ export class HomeComponent implements OnInit {
 
   private initProjectCards(): void {
     this.projectCards = ALL_FRONTEND_MENTOR_TASKS;
+    this.sortCards(false);
+  }
+
+  private sortCards(asc: boolean): void {
+    this.projectCards = this.projectCards.sort(
+      (a, b) => (a.skillNumber - b.skillNumber) * (asc ? -1 : 1)
+    );
   }
 }

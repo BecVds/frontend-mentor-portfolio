@@ -1,0 +1,22 @@
+<div class="selected-buttons">
+    <div class="top">
+        <div class="button-container">
+            <div class="button-placement">
+                <div class="button-background-display"></div>
+                <app-button [option]="playerChoice"></app-button>
+            </div>
+            <h3>YOU PICKED</h3>
+        </div>
+        <div class="button-container">
+            <div class="button-placement">
+                <div class="button-background-display"></div>
+                <app-button [option]="computerChoice"></app-button>
+            </div>
+            <h3>THE HOUSE PICKED</h3>
+        </div>
+    </div>
+    <div class="bottom">
+        <h1>you {{gameState}}</h1>
+        <button (click)="resetGame()">PLAY AGAIN</button>
+    </div>
+</div>

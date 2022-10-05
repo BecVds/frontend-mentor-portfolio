@@ -1,0 +1,34 @@
+<div class="rock-paper-scissors-conatainer">
+    <div class="rules-modal" *ngIf="rulesDisplayed">
+        <h1>RULES</h1>
+        <div class="image-container">
+            <img src="../../../assets/rock-paper-scissors-assets/image-rules.svg" alt="rules">
+        </div>
+        <button (click)="toggleDisplayRules()">X</button>
+    </div>
+    <div class="main-container">
+        <div class="top">
+            <div class="top-banner-conatiner">
+                <h2>ROCK<br>PAPER<br>SCISSORS</h2>
+                <div class="score-container">
+                    <h3>SCORE</h3>
+                    <h1 class="score-amount">{{score}}</h1>
+                </div>
+            </div>
+            <div class="middle">
+                <app-selection-buttons *ngIf="gameInProgress"></app-selection-buttons>
+                <app-selected-buttons *ngIf="!gameInProgress"></app-selected-buttons>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="rules-container button-container">
+                <button (click)="toggleDisplayRules()">RULES</button>
+            </div>
+            <div class="game-option-container button-container">
+                <button (click)="toggleGameMode()">{{ gameModeButtonText }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-home-floating-button></app-home-floating-button>

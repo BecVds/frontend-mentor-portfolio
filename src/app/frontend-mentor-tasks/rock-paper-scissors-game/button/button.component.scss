@@ -1,0 +1,45 @@
+@import '../rock-paper-scissors-styles.scss';
+
+.button-container {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border-bottom: 5px solid pink;
+    cursor: pointer;
+    .inner-circle-background {
+        background-color: #E5EAE5;
+        width: 75%;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        border-top: 5px solid #BABCD0;
+        img {
+            width: 45%;
+        }
+    }
+}
+.paper {
+    background-image: var(--primary-background-color);
+    border-color: var(--border-bottom-color);
+}
+.rock {
+    background-image: var(--primary-background-color);
+    border-color: var(--border-bottom-color);
+}
+.scissors {
+    background-image: var(--primary-background-color);
+    border-color: var(--border-bottom-color);
+}
+.spock {
+    background-image: var(--primary-background-color);
+    border-color: var(--border-bottom-color);   
+}
+.lizard {
+    background-image: var(--primary-background-color);
+    border-color: var(--border-bottom-color);   
+}

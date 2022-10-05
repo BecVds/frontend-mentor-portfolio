@@ -1,0 +1,43 @@
+.selected-buttons {
+    position: relative;
+    top: -60px;
+    .top {
+        display: flex;
+        gap: 40px;
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .button-placement {
+                .button-background-display {
+                    background-color: #192845;
+                }
+            }
+            h3 {
+                color: white;
+                font-size: 10px;
+                }
+        }
+    }
+    .bottom {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color: white;
+            font-size: 45px;
+            text-transform: uppercase;
+        }
+        button {
+            padding: 15px 70px;
+            color: #192845;
+            background-color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

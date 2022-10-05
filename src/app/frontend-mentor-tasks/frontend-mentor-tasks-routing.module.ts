@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {
   CALCULATOR_APP,
   LAUNCH_COUNTDOWN_TIMER,
+  ROCK_PAPER_SCISSORS_GAME,
   SOCIAL_MEDIA_DASHBOARD,
 } from '../home/config/routes-config';
 
@@ -31,6 +32,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./launch-countdown-timer/launch-countdown-timer.module').then(
         (m) => m.LaunchCountdownTimerModule
+      ),
+  },
+  {
+    path: ROCK_PAPER_SCISSORS_GAME,
+    loadChildren: () =>
+      import('./rock-paper-scissors-game/rock-paper-scissors-game.module').then(
+        (m) => m.RockPaperScissorsGameModule
       ),
   },
 ];

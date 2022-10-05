@@ -1,0 +1,20 @@
+.button-container.paper {
+    --primary-background-color: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%)); 
+    --border-bottom-color: #2746C4;
+}
+.button-container.rock {
+    --primary-background-color: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)); 
+    --border-bottom-color: #9E1736;
+}
+.button-container.scissors {
+    --primary-background-color: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%)); 
+    --border-bottom-color: #C46B19;
+}
+.button-container.spock {
+    --primary-background-color: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%)); 
+    --border-bottom-color: #2D8FAB;
+}
+.button-container.lizard {
+    --primary-background-color: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%)); 
+    --border-bottom-color: #6338AB;
+}
