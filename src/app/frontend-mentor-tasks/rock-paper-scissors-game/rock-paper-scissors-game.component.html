@@ -1,8 +1,11 @@
 <div class="rock-paper-scissors-conatainer">
     <div class="rules-modal" *ngIf="rulesDisplayed">
         <h1>RULES</h1>
-        <div class="image-container">
+        <div class="image-container" *ngIf="!gameModeState">
             <img src="../../../assets/rock-paper-scissors-assets/image-rules.svg" alt="rules">
+        </div>
+        <div class="image-container" *ngIf="gameModeState">
+            <img src="../../../assets/rock-paper-scissors-assets/image-rules-bonus.svg" alt="rules">
         </div>
         <button (click)="toggleDisplayRules()">X</button>
     </div>

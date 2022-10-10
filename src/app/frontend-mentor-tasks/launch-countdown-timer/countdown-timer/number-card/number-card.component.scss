@@ -1,9 +1,10 @@
 :root { --time: 0.707s }
 
 .number-card-container {
+    width: 100%;
     .top {        
         background-color: transparent;
-        width: 100px;
+        width: 80px;
         height: 50px;
         perspective: 1000px;
         .top-body {
@@ -25,12 +26,13 @@
                 -webkit-mask: var(--mask);
                 border-radius: 5px;
                 mask: var(--mask);
-                h1 {                                
+                h1 {       
+                    text-align: center;                         
                     position: absolute;
-                    left: calc(50% - 30px);
-                    top: -25px;
+                    left: calc(50% - 22.5px);
+                    top: -7px;
                     color: #D35073;
-                    font-size: 60px;
+                    font-size: 45px;
                 }
             }
             .back {
@@ -47,12 +49,13 @@
                 border-radius: 5px;
                 mask: var(--mask);
                 h1 {
+                    text-align: center; 
                     transform: rotate(180deg);
                     position: absolute;
-                    left: calc(50% - 36px);
-                    top: -24px;
+                    left: calc(50% - 28px);
+                    top: -4.5px;
                     color: #D35073;
-                    font-size: 60px;
+                    font-size: 45px;
                 }
             }
         }
@@ -64,7 +67,7 @@
     }
     }
     .bottom-half {
-        width: 100px;
+        width: 80px;
         height: 50px;
         position: absolute;
         background-color: #34354E;
@@ -75,16 +78,17 @@
         mask: var(--mask);
         z-index: -1;
         h1 {
+            text-align: center; 
             position: absolute;
-            left: calc(50% - 30px);
-            bottom: -24px;
+            left: calc(50% - 22.5px);
+            bottom: -5px;
             color: #D35073;
-            font-size: 60px;
+            font-size: 45px;
         }
     }
     .bottom {
         position: absolute;
-        width: 100px;
+        width: 80px;
         height: 50px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -94,12 +98,13 @@
         -webkit-mask: var(--mask);
         border-radius: 5px;
         mask: var(--mask);
-        h1 {                                
+        h1 {      
+            text-align: center;                           
             position: absolute;
-            left: calc(50% - 30px);
-            top: -24px;
+            left: calc(50% - 22.5px);
+            top: -7px;
             color: #D35073;
-            font-size: 60px;
+            font-size: 45px;
         }
     }
 }

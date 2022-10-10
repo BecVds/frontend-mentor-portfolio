@@ -22,6 +22,10 @@ export class RockPaperScissorsGameComponent implements OnInit, OnDestroy {
     return this.gameState === Outcomes.inProgress;
   }
 
+  get gameModeState(): boolean {
+    return this.gameMode === GameMode.advanced;
+  }
+
   constructor(private gameLogicService: GameLogicService) {}
 
   ngOnInit(): void {

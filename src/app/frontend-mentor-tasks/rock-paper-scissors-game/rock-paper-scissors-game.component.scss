@@ -29,6 +29,11 @@
         flex-direction: column;
         justify-content: space-between;
         .top {
+            display: flex;
+            height: 70%;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
             .top-banner-conatiner {
                 display: flex;
                 justify-content: space-between;
@@ -64,7 +69,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-top: 200px;
+                margin: 60px 0px;
             }
         }
         .bottom {
